@@ -312,8 +312,6 @@ wire mgmt_gpio_out_9_prebuff, mgmt_gpio_out_14_prebuff, mgmt_gpio_out_15_prebuff
     reg  	wbbd_sck;	/* wishbone access trigger (back-door clock) */
     reg  	wbbd_write;	/* wishbone write trigger (back-door strobe) */
     reg		wbbd_busy;	/* Raised during a wishbone read or write */
-    reg		wb_ack_o;	/* acknowledge signal back to wishbone bus */
-    reg [31:0]	wb_dat_o;	/* data output to wishbone bus */
 
     // This defines a state machine that accesses the SPI registers through
     // the back door wishbone interface.  The process is relatively slow
